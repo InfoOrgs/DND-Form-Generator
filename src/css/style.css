@@ -1,0 +1,99 @@
+body {
+    margin: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(12, 63, 83);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar- {
+    background-color: #fff;
+}
+
+#nav {
+    width: 100%;
+    height: 52px;
+    background-color: rgb(12, 63, 83);
+}
+
+#dragable-cont {
+    background-color: rgb(12, 63, 83);
+
+}
+
+#menu-list {
+    background-color: rgb(12, 63, 83);
+    height: 700px;
+    overflow: scroll;
+}
+
+#menu-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+#menu-list::-webkit-scrollbar-thumb {
+    background-color: rgb(38, 108, 136);
+    border-radius: 20px;
+}
+
+#menu-list::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+#menu-list::-webkit-scrollbar-track-piece {
+   background-color: rgb(12, 63, 83);
+}
+
+.main-site {
+    margin-top: 20px !important;
+}
+.dragable-item {
+    padding: 10px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 9px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+.dragable-item h5 {
+    margin: 0px;
+}
+
+#main-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: unset;
+}
+
+.inputs-container {
+    width: 45%;
+
+}
+
+.title {
+    border: none !important;
+    ;
+    border-radius: 0px !important;
+    border-bottom: 1px solid rgb(64, 189, 247) !important;
+    font-size: 18px;
+}
+
+.title::before {
+    content: ' xcdfdc';
+    height: ;
+    background-color: rgb(151, 22, 22);
+}
+
+input {
+    width: 100%;
+}
+
+.submit-btn {
+    margin: auto;
+    display: flex;
+    width: 50%;
+}

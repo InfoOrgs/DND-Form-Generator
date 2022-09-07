@@ -6,26 +6,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DnD Form Generator</title>
-   
+    <link rel="stylesheet" href="/src/css/skeleton.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+
+
 </head>
 
 <body>
-
+    <nav id="nav"></nav>
     <div>
+        <div class="three columns menu-list" id="dragable-cont">
+            <h6 style="color: white; text-align:center;margin:0px">Click to Add+</h6>
+            <div id="menu-list">
+                <div class="dragable-item">
+                    <h5>Text Input</h5>
+                    <input type="text" disabled name="title" placeholder="Text">
 
+                </div>
+                <div class="dragable-item">
+                    <h5>Number Input</h5>
+                    <input type="number" disabled name="title" placeholder="Number">
 
-        <div id="simple-list" class="row">
-            <div id="example1" class="list-group col">
-                <div class="list-group-item">Item 1</div>
-                <div class="list-group-item">Item 2</div>
-                <div class="list-group-item">Item 3</div>
-                <div class="list-group-item">Item 4</div>
-                <div class="list-group-item">Item 5</div>
-                <div class="list-group-item">Item 6</div>
+                </div>
+                <div class="dragable-item">
+                    <h5>Email Input</h5>
+                    <input type="email" disabled name="title" placeholder="Email">
+
+                </div>
+                <div class="dragable-item">
+                    <h5>Text Input</h5>
+                    <input type="text" disabled name="title" placeholder="Text">
+
+                </div>
+                <div class="dragable-item">
+                    <h5>Number Input</h5>
+                    <input type="number" disabled name="title" placeholder="Number">
+
+                </div>
+                <div class="dragable-item">
+                    <h5>Email Input</h5>
+                    <input type="email" disabled name="title" placeholder="Email">
+
+                </div>
+                <div class="dragable-item">
+                    <h5>Text Input</h5>
+                    <input type="text" disabled name="title" placeholder="Text">
+
+                </div>
+                <div class="dragable-item">
+                    <h5>Number Input</h5>
+                    <input type="number" disabled name="title" placeholder="Number">
+
+                </div>
+                <div class="dragable-item">
+                    <h5>Email Input</h5>
+                    <input type="email" disabled name="title" placeholder="Email">
+
+                </div>
             </div>
         </div>
+        <div class="nine columns main-site">
+            <div id="main-items">
+                <div class="card inputs-container">
+
+                    <input type="text" class="title" name="title" placeholder="Title">
+                    <input type="text" name="">
+                </div>
+
+                <div class="card inputs-container">
+
+                    <input type="text" class="title" name="title" placeholder="Title">
+                    <input type="text" name="">
+                </div>
+            </div>
+            <br><br>
+            <button class="button-primary submit-btn"> Save Form </button>
+        </div>
     </div>
-    <script type="module" src="/script.js"></script>
+
+
+    <script src="/src/js/sortable-js.js"></script>
+    <script src="/src/js/script.js"></script>
 </body>
 
 </html>

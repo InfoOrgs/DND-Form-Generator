@@ -1,7 +1,6 @@
-
-
-var example1 = document.getElementById('example1')
-new Sortable(example1, {
+var items = document.getElementById('main-items')
+new Sortable(items, {
     animation: 330,
     ghostClass: 'blue-background-class'
 });
+console.log('dfdfbvfv')
