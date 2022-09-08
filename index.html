@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DnD Form Generator</title>
+    <title>DnD input Generator</title>
     <link rel="stylesheet" href="/src/css/skeleton.css">
     <link rel="stylesheet" href="/src/css/style.css">
 
@@ -13,52 +13,59 @@
 </head>
 
 <body>
-    <nav id="nav"></nav>
+    <nav id="nav">
+        <img src="" alt="">
+        <ul>
+            <li> <a onclick="this.href='data:text/html;charset=UTF-8,'+encodeURIComponent(document.documentElement.outerHTML)"
+                    download="Code.html">Download </a></li>
+            <li>Get Offline</li>
+            <li>Save Offline</li>
+        </ul>
+    </nav>
+
     <div>
         <div class="three columns menu-list" id="dragable-cont">
-            <h6 style="color: white; text-align:center;margin:0px">Click to Add+</h6>
+            <h6 style="color: white;margin:0px;text-align:center ">Click to Add+</h6>
             <div id="menu-list">
-                <div class="dragable-item">
+                <div class="dragable-item" data-input-type="TextInput">
                     <h5>Text Input</h5>
                     <input type="text" disabled name="title" placeholder="Text">
-
                 </div>
-                <div class="dragable-item">
+                <div class="dragable-item" data-input-type="NumberInput">
                     <h5>Number Input</h5>
                     <input type="number" disabled name="title" placeholder="Number">
-
                 </div>
-                <div class="dragable-item">
+                <div class="dragable-item" data-input-type="EmailInput">
                     <h5>Email Input</h5>
                     <input type="email" disabled name="title" placeholder="Email">
 
                 </div>
-                <div class="dragable-item">
+                <div class="dragable-item" data-input-type="TextInput">
                     <h5>Text Input</h5>
                     <input type="text" disabled name="title" placeholder="Text">
 
                 </div>
-                <div class="dragable-item">
+                <div class="dragable-item" data-input-type="TextInput">
                     <h5>Number Input</h5>
                     <input type="number" disabled name="title" placeholder="Number">
 
                 </div>
-                <div class="dragable-item">
+                <div class="dragable-item" data-input-type="TextInput">
                     <h5>Email Input</h5>
                     <input type="email" disabled name="title" placeholder="Email">
 
                 </div>
-                <div class="dragable-item">
+                <div class="dragable-item" data-input-type="TextInput">
                     <h5>Text Input</h5>
                     <input type="text" disabled name="title" placeholder="Text">
 
                 </div>
-                <div class="dragable-item">
+                <div class="dragable-item" data-input-type="TextInput">
                     <h5>Number Input</h5>
                     <input type="number" disabled name="title" placeholder="Number">
 
                 </div>
-                <div class="dragable-item">
+                <div class="dragable-item" data-input-type="TextInput">
                     <h5>Email Input</h5>
                     <input type="email" disabled name="title" placeholder="Email">
 
@@ -66,27 +73,31 @@
             </div>
         </div>
         <div class="nine columns main-site">
+            <div id="toolbar">
+                <h6>Toolbar</h6>
+            </div>
             <div id="main-items">
                 <div class="card inputs-container">
-
-                    <input type="text" class="title" name="title" placeholder="Title">
+                    <input type="text" class="title" name="title" id placeholder="Title">
                     <input type="text" name="">
+                    <span class="AdvOpt">Advance Options</span>
                 </div>
 
                 <div class="card inputs-container">
-
                     <input type="text" class="title" name="title" placeholder="Title">
                     <input type="text" name="">
+                    <span class="AdvOpt">Advance Options</span>
+
                 </div>
             </div>
             <br><br>
-            <button class="button-primary submit-btn"> Save Form </button>
+            <button class="button submit-btn"> Save input </button>
         </div>
     </div>
 
 
     <script src="/src/js/sortable-js.js"></script>
-    <script src="/src/js/script.js"></script>
+    <script type="module" src="/src/js/script.js"></script>
 </body>
 
 </html>
