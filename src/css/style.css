@@ -58,37 +58,34 @@ margin: 10px;
     margin: 0px;
     color: white;
     margin-left: 5%;
+    font-size: 17px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .main-site {
 padding-left: 0px;
 padding-right: 0rem !important;
 margin-top: -16px !important;
+background: #f3f3f375;
 }
 #dragable-cont {
     background-color: var(--PrimColor);
     padding-right: 0rem;
-
 }
-
 #menu-list {
     background-color: var(--PrimColor);
     height: 700px;
     overflow: scroll;
 }
-
 #menu-list::-webkit-scrollbar {
     width: 5px;
 }
-
 #menu-list::-webkit-scrollbar-thumb {
     background-color: var(--SecnColor);
     border-radius: 20px;
 }
-
 #menu-list::-webkit-scrollbar-track {
     background-color: #fff;
 }
-
 #menu-list::-webkit-scrollbar-track-piece {
     background-color: var(--PrimColor);
 }
@@ -107,11 +104,20 @@ margin-top: -16px !important;
 .dragable-item h5 {
     margin: 0px;
 }
-#main-items {}
+.gicons{
+    font-size: 20px;
+    color: rgb(184, 4, 4);
+    float: right;
+    cursor: pointer;
+}
+#main-items {
+    background: #f3f3f375;
+}
 .inputs-container {
     width: 45%;
     display: inline-block;
     margin: 2%;
+    background-color: #fff;
 }
 .title {
     border: none !important;
@@ -119,7 +125,6 @@ margin-top: -16px !important;
     border-bottom: 1px solid rgb(64, 189, 247) !important;
     font-size: 18px;
 }
-
 .title::before {
     content: ' xcdfdc';
     background-color: rgb(151, 22, 22);
@@ -135,15 +140,13 @@ input {
     border-radius: 2px;
     float: right;
 }
-
 .AdvOpt:active {
     font-weight: 600;
     color: var(--SecnColor);
 }
-
 .submit-btn {
     margin: auto;
-    display: flex;
+    display: block;
     width: 50%;
     background-color: var(--PrimColor);
     color: white !important;
