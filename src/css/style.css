@@ -1,13 +1,21 @@
+:root {
+    --PrimColor: rgb(12, 63, 83);
+    --SecnColor: rgb(38, 108, 136);
+}
+
 body {
     margin: 0px;
 }
-
+a{
+    text-decoration: none;
+    color: white;
+}
 ::-webkit-scrollbar {
     width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(12, 63, 83);
+    background-color: var(--PrimColor);
     border-radius: 20px;
 }
 
@@ -18,16 +26,52 @@ body {
 #nav {
     width: 100%;
     height: 52px;
-    background-color: rgb(12, 63, 83);
+    background-color: var(--PrimColor);
 }
-
+#nav ul{
+display: inline-block ;
+float: right ;
+margin: 10px;
+}
+#nav li {
+    display: inline-block;
+    width: 100px;
+    padding: 3px;
+    color: white;
+    text-align: center;
+    border-radius: 7px;
+    background-color:white;
+    box-shadow: 3px 3px 42px 0px rgb(0, 61 ,84, 1) inset,
+        25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+        0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+        -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+        cursor: pointer;
+}
+#nav li:active{
+    background-color:var(--PrimColor);
+}
+#toolbar{
+    background-color: var(--SecnColor);
+}
+#toolbar h6{
+    text-align: left;
+    margin: 0px;
+    color: white;
+    margin-left: 5%;
+}
+.main-site {
+padding-left: 0px;
+padding-right: 0rem !important;
+margin-top: -16px !important;
+}
 #dragable-cont {
-    background-color: rgb(12, 63, 83);
+    background-color: var(--PrimColor);
+    padding-right: 0rem;
 
 }
 
 #menu-list {
-    background-color: rgb(12, 63, 83);
+    background-color: var(--PrimColor);
     height: 700px;
     overflow: scroll;
 }
@@ -37,7 +81,7 @@ body {
 }
 
 #menu-list::-webkit-scrollbar-thumb {
-    background-color: rgb(38, 108, 136);
+    background-color: var(--SecnColor);
     border-radius: 20px;
 }
 
@@ -46,11 +90,7 @@ body {
 }
 
 #menu-list::-webkit-scrollbar-track-piece {
-   background-color: rgb(12, 63, 83);
-}
-
-.main-site {
-    margin-top: 20px !important;
+    background-color: var(--PrimColor);
 }
 .dragable-item {
     padding: 10px;
@@ -58,25 +98,23 @@ body {
     border-radius: 9px;
     margin-top: 10px;
     background-color: #fff;
+    cursor: grab;
+}
+.dragable-item:active {
+    background-color:rgba(12, 63, 83, 0.219);
+    color: white;
 }
 .dragable-item h5 {
     margin: 0px;
 }
-
-#main-items {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: unset;
-}
-
+#main-items {}
 .inputs-container {
     width: 45%;
-
+    display: inline-block;
+    margin: 2%;
 }
-
 .title {
     border: none !important;
-    ;
     border-radius: 0px !important;
     border-bottom: 1px solid rgb(64, 189, 247) !important;
     font-size: 18px;
@@ -84,16 +122,33 @@ body {
 
 .title::before {
     content: ' xcdfdc';
-    height: ;
     background-color: rgb(151, 22, 22);
 }
-
 input {
     width: 100%;
+}
+.AdvOpt {
+    font-size: 12px;
+    font-weight: 200;
+    color: var(--PrimColor);
+    cursor: pointer;
+    border-radius: 2px;
+    float: right;
+}
+
+.AdvOpt:active {
+    font-weight: 600;
+    color: var(--SecnColor);
 }
 
 .submit-btn {
     margin: auto;
     display: flex;
     width: 50%;
+    background-color: var(--PrimColor);
+    color: white !important;
+}
+.submit-btn:active{
+    background-color: var(--SecnColor);
+    color: white;
 }
