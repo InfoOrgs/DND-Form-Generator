@@ -8,14 +8,14 @@
     <title>DnD input Generator</title>
     <link rel="stylesheet" href="/src/css/skeleton.css">
     <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="stylesheet" href="/src/css/google-icons.css">
-
+    <link rel="stylesheet" href="/src/css/icons.css">
+    <link rel="stylesheet" href="/src/css/anime.css" />
 
 </head>
 
 <body>
     <nav id="nav">
-        <img src="" alt="">
+       <h6 id="logoText" class="animate__animated">DnD Form Generator</h6>
         <ul>
             <li> <a onclick="this.href='data:text/html;charset=UTF-8,'+encodeURIComponent(document.documentElement.outerHTML)"
                     download="Code.html">Download </a></li>
@@ -79,27 +79,37 @@
                 <h6>Toolbar</h6>
             </div>
             <div id="main-items">
-                <div class="card inputs-container">
-                    <i class="material-symbols-outlined gicons">
-                        delete
-                    </i>
+                <div class="card inputs-container animate__animated">
+                    <span class="material-symbols-outlined gicons ">delete</span>
                     <input type="text" class="title" name="title" id placeholder="Title">
-                    <input type="text" name="">
+                    <input type="text" name="" placeholder="Text">
                     <span class="AdvOpt">Advance Options</span>
                 </div>
 
-                <div class="card inputs-container">
-                    <input type="text" class="title" name="title" placeholder="Title">
-                    <input type="text" name="">
+                <div class="card inputs-container animate__animated">
+                    <span class="material-symbols-outlined gicons">delete</span>
+                    <input type="text" class="title" name="title" id placeholder="Title">
+                    <input type="text" name="" placeholder="Text">
                     <span class="AdvOpt">Advance Options</span>
-
                 </div>
             </div>
             <br><br>
             <button class="button submit-btn"> Save input </button>
         </div>
     </div>
+<div>
+<h5>Advance Options</h5>
 
+
+
+
+
+
+
+
+
+<button> Add </button>
+</div>
 
     <script src="/src/js/sortable-js.js"></script>
     <script type="module" src="/src/js/script.js"></script>
