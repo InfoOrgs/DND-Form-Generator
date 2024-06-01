@@ -11,7 +11,7 @@ Welcome to the Drag and Drop Form Generator! This repository contains a web appl
 - [Contributing](#contributing)
 - [License](#license)
 
-## Features
+## Features & Upcoming Features
 
 - **Drag-and-Drop Interface**: Easily add and arrange form elements with a user-friendly drag-and-drop interface.
 - **Customizable Elements**: Customize properties of form elements like labels, placeholders, required fields, etc.
